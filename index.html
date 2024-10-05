@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Know Thyself Workshop</title>
+    <title>know thyself workshop</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <style>
         body, html {
@@ -18,22 +18,42 @@
         .slide {
             height: 100vh;
             width: 100vw;
-            display: flex;
+            display: none;
             justify-content: center;
             align-items: center;
             text-align: center;
             position: absolute;
             top: 0;
             left: 0;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
         }
         .slide.active {
-            opacity: 1;
+            display: flex;
         }
         .content {
             max-width: 800px;
             padding: 20px;
+        }
+        .title-slide {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90vw;
+            max-width: 1200px;
+        }
+        .title-text {
+            text-align: left;
+            flex: 1;
+            padding-right: 40px;
+        }
+        .title-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .title-image img {
+            max-width: 100%;
+            height: auto;
         }
         .left-aligned {
             text-align: left;
@@ -42,6 +62,7 @@
             font-size: 3em;
             font-weight: bold;
             margin-bottom: 0.5em;
+            text-transform: lowercase;
         }
         p {
             font-size: 1.5em;
@@ -62,7 +83,7 @@
         }
         .qr-code {
             width: 200px;
-            height: 200px;
+            height: auto;
             margin: 20px auto;
         }
         .magic-text {
@@ -89,7 +110,7 @@
             cursor: pointer;
         }
         a:hover {
-            text-decoration: underline;
+            background-color: rgba(255, 0, 0, 0.1);
         }
         ul {
             text-align: left;
@@ -100,10 +121,15 @@
 </head>
 <body>
     <div class="slide active">
-        <div class="content">
-            <h1 class="fade-in">know thyself workshop</h1>
-            <p class="fade-in">building your personal manifesto & website with claude ai</p>
-            <p class="fade-in emphasis">(zero coding know-how required)</p>
+        <div class="title-slide">
+            <div class="title-text">
+                <h1 class="fade-in">know thyself workshop</h1>
+                <p class="fade-in">building your personal manifesto & website with claude ai</p>
+                <p class="fade-in emphasis">(zero coding know-how required)</p>
+            </div>
+            <div class="title-image">
+                <img class="fade-in" src="https://i.imgur.com/j5TOLIX.png" alt="Workshop Image">
+            </div>
         </div>
     </div>
 
@@ -119,7 +145,7 @@
     <div class="slide">
         <div class="content">
             <h1 class="fade-in">what is a manifesto?</h1>
-            <p class="fade-in">a written declaration of your beliefs, goals, or intentions. it enholds your values & principles. a bold statement for what you stand for.</p>
+            <p class="fade-in">a written declaration of your beliefs, goals, or intentions. it encompasses your values & principles. a bold statement for what you stand for.</p>
             <p class="fade-in emphasis">a mirror, a compass, a rallying cry</p>
         </div>
     </div>
@@ -138,11 +164,11 @@
         <div class="content left-aligned">
             <h1 class="fade-in">sample manifesto template</h1>
             <ul class="fade-in">
-                <li>Values</li>
-                <li>Philosophers/Quotes that you are influenced by</li>
-                <li>Some things you believe</li>
-                <li>Blog or essays: deeper dives into your thoughts on important topics, updates on your journey, or reflections</li>
-                <li>Resources: things that help others take action on their own missions (tools, books, podcasts)</li>
+                <li>values & world model</li>
+                <li>quotes & affirmations you live by</li>
+                <li>things you believe</li>
+                <li>links to your essays or art: previous musings, reflections, expressions of self</li>
+                <li>resources you've been influenced by (essays, books, podcasts)</li>
             </ul>
         </div>
     </div>
@@ -150,8 +176,8 @@
     <div class="slide">
         <div class="content">
             <h1 class="fade-in">manifesto inspo</h1>
-            <p class="fade-in"><a href="https://nat.org/" target="_blank">nat.org</a> - list format</p>
-            <p class="fade-in"><a href="https://ia.samaltman.com/" target="_blank">ia.samaltman.com</a> - essay format</p>
+            <p class="fade-in"><a href="https://nat.org/" onclick="window.open(this.href, '_blank'); return false;">nat.org</a> - list format</p>
+            <p class="fade-in"><a href="https://ia.samaltman.com/" onclick="window.open(this.href, '_blank'); return false;">ia.samaltman.com</a> - essay format</p>
             <p class="fade-in">my personal favorite - the personal website</p>
             <p class="fade-in emphasis">no rules. make it you</p>
         </div>
@@ -160,10 +186,10 @@
     <div class="slide">
         <div class="content">
             <h1 class="fade-in">websites created with claude</h1>
-            <p class="fade-in"><a href="https://dirtythirties.xyz" target="_blank">dirtythirties.xyz</a></p>
-            <p class="fade-in"><a href="https://investingforfreaks.com" target="_blank">investingforfreaks.com</a></p>
-            <p class="fade-in"><a href="https://zenasfuck.xyz" target="_blank">zenasfuck.xyz</a></p>
-            <p class="fade-in"><a href="https://svetlanadubkova.xyz" target="_blank">svetlanadubkova.xyz</a></p>
+            <p class="fade-in"><a href="https://dirtythirties.xyz" onclick="window.open(this.href, '_blank'); return false;">dirtythirties.xyz</a></p>
+            <p class="fade-in"><a href="https://investingforfreaks.com" onclick="window.open(this.href, '_blank'); return false;">investingforfreaks.com</a></p>
+            <p class="fade-in"><a href="https://zenasfuck.xyz" onclick="window.open(this.href, '_blank'); return false;">zenasfuck.xyz</a></p>
+            <p class="fade-in"><a href="https://svetlanadubkova.xyz" onclick="window.open(this.href, '_blank'); return false;">svetlanadubkova.xyz</a></p>
             <p class="fade-in emphasis">the only limitation is your own imagination. experiment. iterate. try different things</p>
         </div>
     </div>
@@ -172,8 +198,8 @@
         <div class="content">
             <h1 class="fade-in">manifesto brainstorm time</h1>
             <p class="fade-in">take a few minutes to jot down your thoughts</p>
-            <p class="fade-in">consider the questions we discussed earlier</p>
-            <p class="fade-in emphasis">let your ideas flow freely</p>
+            <p class="fade-in">think about your values, inspo & consolidate relevant musings</p>
+            <p class="fade-in emphasis">values, quotes, essays, influences etc.</p>
         </div>
     </div>
 
@@ -181,22 +207,22 @@
         <div class="content">
             <h1 class="fade-in">claude4dummies demo</h1>
             <p class="fade-in">as a non-technical person, I'll teach you how to build a website with Claude. no extra bs.</p>
-            <p class="fade-in emphasis">not able to create a nice website with claude? skill issue tbh</p>
+            <p class="fade-in emphasis">not able to create a nice website with claude? skill issue tbh. you can create really nice websites with claude.</p>
         </div>
     </div>
 
     <div class="slide">
         <div class="content">
             <h1 class="fade-in">the gift of discernment & taste</h1>
-            <p class="fade-in">in the age of AI, the ability to recognize quality and make aesthetic judgments is more valuable than ever</p>
-            <p class="fade-in">your unique perspective and taste will set your work apart</p>
+            <p class="fade-in">in the age of AI, the ability to recognize quality and make good aesthetic judgments is more valuable than ever</p>
+            <p class="fade-in">when ai is everywhere, taste will set your work apart</p>
             <p class="fade-in emphasis">cultivate your discernment as you work with AI tools</p>
         </div>
     </div>
 
     <div class="slide">
         <div class="content">
-            <h1 class="fade-in"><span class="magic-text">the magic of continue</span></h1>
+            <h1 class="fade-in"><span class="magic-text">the magic of "continue"</span></h1>
             <p class="fade-in">when claude's response is cut off</p>
             <p class="fade-in">simply type "continue" or "go on"</p>
             <p class="fade-in">claude will pick up where it left off</p>
@@ -226,11 +252,11 @@
 
     <div class="slide">
         <div class="content">
-            <h1 class="fade-in"><span class="magic-text">the magic of html modification</span></h1>
-            <p class="fade-in">have existing html you want to change?</p>
-            <p class="fade-in">paste it in and ask claude to modify</p>
-            <p class="fade-in">specify the changes you want made</p>
-            <p class="fade-in emphasis">effortlessly update and improve your website</p>
+            <h1 class="fade-in"><span class="magic-text">the magic of reverse engineering websites</span></h1>
+            <p class="fade-in">once you create a website with Claude that reflects your personal style</p>
+            <p class="fade-in">ask Claude to create a prompt to recreate that exact website</p>
+            <p class="fade-in">use variations of this prompt for future websites</p>
+            <p class="fade-in emphasis">alternatively, copy the HTML and ask Claude to replace the content for quick modifications</p>
         </div>
     </div>
 
@@ -245,14 +271,14 @@
     <div class="slide">
         <div class="content">
             <h1 class="fade-in">hosting your website</h1>
-            <p class="fade-in">1. Sign up for GitHub (if you haven't already)</p>
-            <p class="fade-in">2. Create a new repository on GitHub</p>
-            <p class="fade-in">3. Copy the HTML content Claude generated for you</p>
-            <p class="fade-in">4. Paste the HTML into a new file named 'index.html' in your repository</p>
-            <p class="fade-in">5. Go to your repository's "Settings" tab</p>
-            <p class="fade-in">6. Scroll down to "GitHub Pages" section</p>
-            <p class="fade-in">7. Under "Source", select "main" branch</p>
-            <p class="fade-in">8. Click "Save"</p>
+            <p class="fade-in">1. sign up for GitHub (if you haven't already)</p>
+            <p class="fade-in">2. create a new repository on GitHub</p>
+            <p class="fade-in">3. copy the HTML content Claude generated for you</p>
+            <p class="fade-in">4. paste the HTML into a new file named 'index.html' in your repository</p>
+            <p class="fade-in">5. go to your repository's "Settings" tab</p>
+            <p class="fade-in">6. scroll down to "GitHub Pages" section</p>
+            <p class="fade-in">7. under "Source", select "main" branch</p>
+            <p class="fade-in">8. click "Save"</p>
             <p class="fade-in emphasis">your website is now live at username.github.io/repository-name!</p>
         </div>
     </div>
@@ -291,27 +317,6 @@
             showSlide(prevIndex);
         }
 
-        function resetCurrentSlide() {
-            const elements = slides[currentSlide].querySelectorAll('.fade-in');
-            elements.forEach(el => el.classList.remove('visible'));
-            const magicText = slides[currentSlide].querySelector('.magic-text');
-            if (magicText) {
-                magicText.classList.remove('animate');
-            }
-            setTimeout(() => {
-                elements.forEach((el, i) => {
-                    setTimeout(() => {
-                        el.classList.add('visible');
-                    }, i * 200);
-                });
-                if (magicText) {
-                    setTimeout(() => {
-                        magicText.classList.add('animate');
-                    }, 500);
-                }
-            }, 100);
-        }
-
         document.addEventListener('keydown', (e) => {
             if (e.code === 'Space' || e.code === 'ArrowRight') {
                 e.preventDefault();
@@ -319,17 +324,7 @@
             } else if (e.code === 'Delete' || e.code === 'Backspace' || e.code === 'ArrowLeft') {
                 e.preventDefault();
                 previousSlide();
-            } else if (e.code === 'KeyR') {
-                resetCurrentSlide();
             }
-        });
-
-        // Add click event listeners to all links
-        document.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                window.open(e.target.href, '_blank');
-            });
         });
 
         showSlide(0);
